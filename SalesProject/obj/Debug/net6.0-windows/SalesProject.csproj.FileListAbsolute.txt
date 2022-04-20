@@ -1,10 +1,13 @@
+C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.Home.resources
+C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.Registration.resources
+C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.csproj.GenerateResource.cache
 C:\Users\ACER\source\repos\SalesProject\SalesProject\bin\Debug\net6.0-windows\SalesProject.exe
 C:\Users\ACER\source\repos\SalesProject\SalesProject\bin\Debug\net6.0-windows\SalesProject.deps.json
 C:\Users\ACER\source\repos\SalesProject\SalesProject\bin\Debug\net6.0-windows\SalesProject.runtimeconfig.json
 C:\Users\ACER\source\repos\SalesProject\SalesProject\bin\Debug\net6.0-windows\SalesProject.dll
 C:\Users\ACER\source\repos\SalesProject\SalesProject\bin\Debug\net6.0-windows\SalesProject.pdb
-C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.csproj.AssemblyReference.cache
-C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.Properties.Resources.resources
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.AssemblyInfoInputs.cache
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.AssemblyInfo.cs
@@ -14,5 +17,3 @@ C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\re
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.pdb
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.genruntimeconfig.cache
 C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\ref\SalesProject.dll
-C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.Home.resources
-C:\Users\ACER\source\repos\SalesProject\SalesProject\obj\Debug\net6.0-windows\SalesProject.Registration.resources
