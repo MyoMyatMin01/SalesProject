@@ -26,6 +26,8 @@ namespace SalesProject
         {
             Registration registration = new Registration();
             registration.Show();
+            //this.Hide();
         }
+
     }
 }

@@ -75,16 +75,6 @@ namespace SalesProject
             }
         }
 
-        public void Clear()
-        {
-            txtName.Text = "";
-            txtEmail.Text = "";
-            rhTxtAddress.Text = "";
-            txtPhone.Text = "";
-            rbtnMale.Checked = false;
-            rbtnFemale.Checked = false;
-        }
-
         private void gVEmployeeData_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Id = int.Parse(gVEmployeeData.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -105,6 +95,7 @@ namespace SalesProject
             }
 
             btnUpdate.Enabled = true;
+            btnDelete.Enabled = true;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -118,6 +109,7 @@ namespace SalesProject
                 cmd = new SqlCommand(updateQuery, con);
                 cmd.ExecuteNonQuery();
                 btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
                 Clear();
             }
             catch (Exception ex)
@@ -129,6 +121,61 @@ namespace SalesProject
                 con.Close();
             }
             Display();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string gender = rbtnMale.Checked ? "Male" : "Female";
+            string deleteQuery = $"DELETE FROM Employee WHERE id = {Id};";
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand(deleteQuery, con);
+                cmd.ExecuteNonQuery();
+                btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
+                Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+            Display();
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string dataFromEmployeeTable = $"SELECT * FROM Employee WHERE name LIKE '%{txtSearch.Text}%';";
+            try
+            {
+                con.Open();
+                dt = new DataTable();
+                adapter = new SqlDataAdapter(dataFromEmployeeTable, con);
+                adapter.Fill(dt);
+                gVEmployeeData.DataSource = dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void Clear()
+        {
+            txtName.Clear();
+            txtEmail.Clear();
+            rhTxtAddress.Clear();
+            txtPhone.Clear();
+            rbtnMale.Checked = false;
+            rbtnFemale.Checked = false;
         }
     }
 }

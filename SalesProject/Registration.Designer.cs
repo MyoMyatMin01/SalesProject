@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.rbtnFemale = new System.Windows.Forms.RadioButton();
             this.rbtnMale = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,6 +56,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(200)))), ((int)(((byte)(177)))));
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.rbtnFemale);
             this.groupBox1.Controls.Add(this.rbtnMale);
             this.groupBox1.Controls.Add(this.label5);
@@ -73,6 +77,23 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(337, 219);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 19);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Search :";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(438, 216);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(206, 25);
+            this.txtSearch.TabIndex = 15;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // rbtnFemale
             // 
@@ -145,7 +166,7 @@
             // 
             this.rhTxtAddress.Location = new System.Drawing.Point(105, 108);
             this.rhTxtAddress.Name = "rhTxtAddress";
-            this.rhTxtAddress.Size = new System.Drawing.Size(206, 96);
+            this.rhTxtAddress.Size = new System.Drawing.Size(206, 85);
             this.rhTxtAddress.TabIndex = 5;
             this.rhTxtAddress.Text = "";
             // 
@@ -196,6 +217,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -292,5 +314,7 @@
         private Button btnUpdate;
         private DataGridView gVEmployeeData;
         private DateTimePicker dateTimePicker1;
+        private Label label4;
+        private TextBox txtSearch;
     }
 }
