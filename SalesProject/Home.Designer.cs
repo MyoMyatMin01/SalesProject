@@ -96,6 +96,8 @@
             this.btnShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShop.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnShop.ForeColor = System.Drawing.Color.White;
+            this.btnShop.Image = ((System.Drawing.Image)(resources.GetObject("btnShop.Image")));
+            this.btnShop.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnShop.Location = new System.Drawing.Point(735, 14);
             this.btnShop.Name = "btnShop";
             this.btnShop.Size = new System.Drawing.Size(139, 50);
